@@ -16,7 +16,7 @@ class AppUI:
     def __init__(self, root):
         self.root = root
         self.root.title("홀심알람")
-        self.root.geometry("500x540")
+        self.root.geometry("500x560")
         self.root.resizable(False, False)
 
         try:
@@ -62,6 +62,9 @@ class AppUI:
         self._create_file_selection_widgets(main_frame)
         self._create_settings_widgets(main_frame)
         self._create_action_widgets(main_frame)
+
+        made_by_label = ttk.Label(main_frame, text="made by 멀바", foreground="gray")
+        made_by_label.pack(side=tk.BOTTOM, pady=5)
 
         self.ui_elements_to_disable = [
             self.window_combobox, self.refresh_button, self.image_button, self.sound_button,
