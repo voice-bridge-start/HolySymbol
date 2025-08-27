@@ -15,7 +15,7 @@ from src.utils import resource_path
 class AppUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("홀심알람")
+        self.root.title("HolySymbol")
         self.root.geometry("500x560")
         self.root.resizable(False, False)
 
